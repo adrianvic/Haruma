@@ -1,0 +1,23 @@
+{
+  "name": "haruma",
+  "version": "2.4.0",
+  "description": "A Discord bot to help you with roleplay",
+  "main": "index.js",
+  "codename": "Pandora",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "roleplay"
+  ],
+  "author": "tenkuma.",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "genius-lyrics-api": "^3.2.0",
+    "node-fetch": "^3.3.2"
+  }
+}
