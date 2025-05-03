@@ -42,16 +42,15 @@ client.on ('ready', () => {
 })
 
 // Get any message
- client.on('messageCreate', message => {
- 	if (message.author.bot) {
-         return;
-     }
-	 // Check if it's something you want to reply and replies
-     if (message.content.toLowerCase().includes('theFirstWord') || message.content.toLowerCase().includes('theSecondWord') && message.content.toLowerCase().includes('fofa')) {
-         message.reply('^v-v^');
-     }
-
-
+client.on('messageCreate', message => {
+    if (message.author.bot) {
+        return;
+    }
+    // Check if it's something you want to reply and replies
+    if (message.content.toLowerCase().includes('theFirstWord') || (message.content.toLowerCase().includes('theSecondWord') && message.content.toLowerCase().includes('fofa'))) {
+        message.reply('^v-v^');
+    }
+});
 
 // Get slash command
 client.on(Events.InteractionCreate, async interaction => {
@@ -147,8 +146,8 @@ const activities_list = [
 	"Sono Que Eu Perdi (Demo) by YunLi",
 	"Acabou by YunLi",
 	"Saudades Eu Até Sinto (Demo) by YunLi",
-	"Dói Demais (Demo) by YunLi",
 	"Playback (Demo) by YunLi",
+	"Playback by YunLi",
 	"Lista De Favoritos (Demo) by YunLi",
 	"Sprinter Trueno by YunLi",
     ];
